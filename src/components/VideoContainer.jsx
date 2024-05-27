@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { YOUTUBE_VIDEOS_API_KEY } from '../utils/constants';
 import VideoCard from './VideoCard';
 
@@ -12,6 +12,7 @@ const [videos, setVideos] = useState([]);
   getVideos();
 
  }, []); 
+
 
 const getVideos = async () => {
 const data = await fetch(YOUTUBE_VIDEOS_API_KEY);
