@@ -3,7 +3,7 @@ import React from "react";
 const VideoCard = ({ info = {} }) => {
   console.log(info);
 
-  // Destructure with default values to avoid errors
+  // Destructure with default values to avoid errors in the program
   const { snippet = {}, statistics = {} } = info;
   const { channelTitle = "", title = "", thumbnails = { high: "" } } = snippet;
 
