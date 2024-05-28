@@ -10,6 +10,6 @@ export default defineConfig({
   plugins: [react()],
   base: "/react_youtube/",
   define: {
-    "process.env.VITE_YOUTUBE_VIDEOS_API_KEY": JSON.stringify(process.env.VITE_YOUTUBE_VIDEOS_API_KEY),
+    "process.env.VITE_GOOGLE_API_KEY": JSON.stringify(process.env.VITE_GOOGLE_API_KEY),
   },
 });
