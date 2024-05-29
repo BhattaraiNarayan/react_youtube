@@ -21,7 +21,7 @@ console.log(json.items);
 setVideos(json.items);
 };
   return (
-    <div className='flex flex-wrap'>
+    <div className='flex flex-wrap gap-8'>
       {
         videos.map((video)=>(
           <VideoCard key={video.id} info={video} />
