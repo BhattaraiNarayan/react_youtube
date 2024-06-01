@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 const Sidebar = () => {
@@ -13,7 +14,7 @@ const Sidebar = () => {
     <div className="shadow-sm col-span-1 pl-2">
      
         <ul className="pt-4 my-2">
-          <li>Home</li>
+          <li><Link to="/react_youtube/">Home</Link></li>
           <li>Shorts</li>
           <li>Videos</li>
           <li>Live</li>
