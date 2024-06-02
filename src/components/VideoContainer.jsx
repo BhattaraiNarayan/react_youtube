@@ -24,8 +24,8 @@ setVideos(json.items);
   return (
     <div className="flex flex-wrap gap-8">
       {videos.map((video) => (
-        <Link to={"/react_youtube/watch?v=" + video.id}>
-          <VideoCard key={video.id} info={video} />
+        <Link key={video.id} to={"/react_youtube/watch?v=" + video.id}>
+          <VideoCard info={video} />
         </Link>
       ))}
     </div>

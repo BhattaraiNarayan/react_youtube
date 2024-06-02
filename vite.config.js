@@ -11,5 +11,6 @@ export default defineConfig({
   base: "/react_youtube/",
   define: {
     "process.env.VITE_GOOGLE_API_KEY": JSON.stringify(process.env.VITE_GOOGLE_API_KEY),
+    "process.env.VITE_YOUTUBE_SEARCH_API": JSON.stringify(process.env.VITE_YOUTUBE_SEARCH_API),
   },
 });
